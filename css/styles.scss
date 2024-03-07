@@ -1,5 +1,6 @@
 $body-color: #262626;
 $white-color: #fff;
+$link-hover-color: #D9CF41;
 
 body {
     background-color: $body-color;
@@ -21,5 +22,9 @@ body {
         text-decoration: none;
         color: $white-color;
         padding: 5px;
+        
+        &:hover {
+            color: $link-hover-color;
+        }
     }
 } 

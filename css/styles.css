@@ -17,4 +17,7 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 5px;
+}
+.nav a:hover {
+  color: #D9CF41;
 }/*# sourceMappingURL=styles.css.map */
