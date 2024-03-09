@@ -5,20 +5,34 @@ $orthe-color: #BFA34E;
 
 body {
     background-color: $body-color;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo img {
     border-radius: 30px;
+    margin-top: -15px;
 }
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px;
+    position: fixed;
+    top: 0;
+    width: 96%;
+    margin-bottom: 10px;
+    background-color: $body-color;
+    padding: 30px;
 
-    @media screen and (max-width: 420px) {
-        margin: 10px;
+    @media screen and (max-width: 420px), (max-width: 500px) {
+        margin: 2px;
+        width: 82%;
+        margin-bottom: 50px;
     }
 }
 
@@ -26,7 +40,7 @@ body {
     a {
         text-decoration: none;
         color: $white-color;
-        padding: 5px;
+        padding: 10px;
         
         &:hover {
             color: $link-hover-color;
@@ -37,6 +51,7 @@ body {
         a {
             display: block; 
             text-align: center; 
+            font-size: 12px;
         }
     }
 } 
@@ -44,7 +59,7 @@ body {
 .about-icon {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 .about-info-container {
@@ -53,18 +68,20 @@ body {
     justify-content: center;
     margin-top: 20px;
 
-    @media screen and (max-width: 420px), (max-width: 500px) {
+    @media screen and (max-width: 420px), (max-width: 500px), (max-width: 770px), (max-width: 825px) {
         flex-direction: column; 
         align-items: center; 
 
         .description {
             width: 340px;
             margin: 3px;
+            font-size: 18px;
         }
 
         .cv {
             margin-top: 15px;
         }
+
     }
 }
 
@@ -73,10 +90,12 @@ body {
     width: 600px;
     margin-top: 40px;
     margin-left: 30px;
+    font-size: 20px;
 }
 
 .profil-picture img {
     border-radius: 10px;
+    box-shadow:  0px 0px 18px $link-hover-color;
 }
 
 .name {
@@ -85,12 +104,13 @@ body {
     align-items: center;
     justify-content: center;
     align-content: center;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .profession {
     color: $white-color;
     margin-top: -5px;
+    font-size: 20px;
 }
 
 .cv {
@@ -104,6 +124,11 @@ body {
     .cv-link {
         text-decoration: none;
         color: black;
+
+        &:hover {
+            color: $white-color;
+            font-weight: bold;
+        }
     }
 }
 
@@ -122,6 +147,121 @@ body {
 .skill-icon-container {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 130px;
 }
 
+.skill-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        padding: 10px;
+        margin-top: 30px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    @media screen and (max-width: 420px), (max-width: 500px), (max-width: 770px), (max-width: 825px) {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+.line {
+    border-bottom: 2px solid rgba(191, 163, 78, 0.5);;
+    box-shadow: 0px 2px 5px $orthe-color; 
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white-color;
+
+    .copyright {
+        font-size: 20px;
+    }
+
+    .phone {
+        font-size: 17px;
+        margin-bottom: -5px;
+    }
+
+    @media screen and (max-width: 420px), (max-width: 500px) {
+        .copyright {
+            font-size: 18px;
+        }
+
+        .phone {
+            font-size: 15;
+        }
+    }
+}
+
+@font-face {
+    font-family: "sourceSansPro";
+    src: url(../css/fonts/SourceSansPro-Light.otf) format('opentype');
+}
+
+.stage {
+    text-decoration: underline;
+    text-decoration-color: $orthe-color;
+    text-decoration-thickness: 2px;
+}
+
+::selection {
+    background-color: $link-hover-color; /* Couleur de fond lors de la sélection */
+    color: black; /* Couleur du texte lors de la sélection */
+}
+
+.main {
+    @media screen and (max-width: 420px), (max-width: 500px) {
+       padding: 20px;
+    }
+}
+
+
+
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project {
+    position: relative;
+    margin: 25px;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    transition: width 0.3s ease, height 0.3s ease; /* Ajout de la transition */
+  }
+  
+  .project img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .description2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .project:hover .description {
+    opacity: 0;
+  }
+  
+  .project:hover {
+    width: 750px; /* Agrandir le conteneur de trois fois */
+    height: 750px; /* Agrandir le conteneur de trois fois */
+  }
+  
