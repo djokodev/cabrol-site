@@ -211,6 +211,13 @@ p {
   }
 }
 
+.portfolio-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+
 .portfolio {
   display: flex;
   justify-content: center;
@@ -220,9 +227,9 @@ p {
   position: relative;
   margin: 25px;
   overflow: hidden;
-  width: 500px;
-  height: 500px;
-  transition: width 0.3s ease, height 0.3s ease; /* Ajout de la transition */
+  width: 350px;
+  height: 350px;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .project img {
@@ -240,7 +247,7 @@ p {
   width: 100%;
 }
 
-.project:hover .description {
+.project:hover .description2 {
   opacity: 0;
 }
 
