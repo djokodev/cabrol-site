@@ -8,4 +8,15 @@
 
 ### Pour accéder et lancer ce projet sur votre machine locale, suivez ces étapes :
 
-## 1- Cloner le Répertoire
+## 1. Cloner le Répertoire
+  Tout d'abord, ouvrez votre terminal et exécutez la commande suivante pour cloner ce répertoire sur votre machine : git clone https://github.com/djokodev/cabrol-site.git  
+
+### 2. Accéder au Répertoire
+Accédez au répertoire du projet en utilisant la commande cd : cd nomDuRepertoire
+
+### 3. Lancer le Projet
+Ouvrez le fichier index.html dans votre navigateur Web préféré pour lancer le projet. Vous pouvez le faire en double-cliquant sur le fichier.
+
+
+
+enjoy 😊
