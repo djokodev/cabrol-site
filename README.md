@@ -24,10 +24,4 @@ enjoy 😊
 
 ## Quelques images :
 
-![Maquette Desktop Portfolio](https://github.com/djokodev/cabrol-site/assets/161902861/b2a98dbf-adaa-4d29-9324-2f525c747171)
-![Wireframe Desktop Portfolio](https://github.com/djokodev/cabrol-site/assets/161902861/45456d11-fcd5-4271-b077-7658774eb328)
-![Maquette Desktop Portfolio](https://github.com/djokodev/cabrol-site/assets/161902861/8eadec88-507c-4d60-813a-e569b791e868)
-![Wireframe Mobile Portfolio](https://github.com/djokodev/cabrol-site/assets/161902861/8b7a3687-a7dc-4687-aecd-cfd333fb6348)
-![Wireframe Desktop Portfolio](https://github.com/djokodev/cabrol-site/assets/161902861/535b013d-381b-4685-8a7c-8385d35fd36a)
-![Wireframe Mobile Portfolio](https://github.com/djokodev/cabrol-site/assets/161902861/670b8091-dde3-4742-b994-149dc3244cb1)
 
